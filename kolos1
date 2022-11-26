@@ -208,7 +208,56 @@ int main()
 	cout << n << "wyraz ciagu ma wartosc " << ciag(n) << endl;
 	return 0;
 }
+/////////////////////////////////////////////////
+najwieksza i suma liczb  bezwgledna 
+
+#include<iostream>
+#include<string>
+using namespace std;
 
 
+void dbz() {
+
+	double a, b, c;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	double N = max(a, b);
+	double K = max(c, N);
+	cout << "najwieksza: ";
+	cout << K; 
+	cout << endl;
+	if (a < 0) {
+	
+		a = -a;
+	}
+	if (c < 0) {
+
+		c = -c;
+	}
+	if (b< 0) {
+
+		b = -b;
+	}
+	double wyn = a + b + c;
+	cout << "Suma tych licz to: " << wyn;
+
+}
+
+
+
+
+
+int main() {
+
+	cout << "3 liczby: ";
+
+	dbz();
+
+	return 0;
+
+
+
+}
 
 
