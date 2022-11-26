@@ -1,0 +1,109 @@
+
+
+
+//lsosowy zlepek liter z napisu startowego
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+string K(string s) {
+	string j = "";
+	int l = s.length();
+	for (int i = l; i > 0; i--) {
+		int nr = rand() % i;
+		string litera = s.substr(nr, 1);
+		s = s.erase(nr, 1);
+		j = j + litera;
+	}
+	return j;
+}
+
+
+int main(){
+	
+	string n;
+	cout << "Tekst: ";
+	cin >> n;
+	cout << K(n) << endl;
+	cout << K(n) << endl;
+	cout << K(n) << endl;
+
+}
+
+
+
+
+//////////////////////////
+
+
+ANAGRAM(pisanie od tyłu wyrazu)
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+string A(string S) {
+	string K = "";
+	int L = S.length();
+	for (int i = 0; i < L; i++)
+		K = S[i] + K;
+	return K;
+}
+
+int main(){
+	
+	string N;
+	cout << "imie i nazwisko: ";
+	getline(cin, N);
+	cout << A(N) << endl;
+
+	return 0;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+najwieksza 3 liczb 
+
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+void dbz() {
+
+	double a, b, c;
+	cin >> a;
+	cin >> b;
+	cin >> c;
+	double N = max(a, b);
+	double K = max(c, N);
+	cout << "wynik: ";
+	cout << K;
+
+
+
+}
+
+int main(){
+	
+	cout << "3 liczby: ";
+
+	dbz();
+
+	return 0;
+
+
+
+}
+
+///////////////////////////////////////////////
+
+
+
