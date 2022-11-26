@@ -261,3 +261,37 @@ int main() {
 }
 
 
+//////////////////////////////////////
+liczy promien i obwód kola 
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+
+void polek() {
+	double r;
+	cin >> r;
+
+		float pi = 3.1415102;
+		double pole = pi * (r * r);
+		double obwod = (2 * pi) * r;
+		cout << "pole wynosi: " << pole << endl << "obwod wynosi: " << obwod;
+
+
+}
+
+
+
+int main() {
+
+	cout << "podaj promien: ";
+	polek();
+	return 0;
+
+
+
+}
+
+
