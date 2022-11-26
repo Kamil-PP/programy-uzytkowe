@@ -106,4 +106,81 @@ int main(){
 ///////////////////////////////////////////////
 
 
+Mini szyfrowanie. Napisz funkcję, która zwróci zaszyfrowany tekst. Zasada szyfrowania: kod ASCII każdego znaku zwiększamy o konkretną liczbę
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+string S1(string k, int s) {
+	int m = k.length();
+	for (int i = 0; i < m; i++) {
+		
+		k[i] = char(int(k[i]) + s);
+	}
+	return k;
+}
+
+
+int main() {
+
+	string sk;
+	int ks;
+	cout << "napis: ";
+	getline(cin, sk);
+	cout << "kod: ";
+	cin >> ks;
+	sk = S1(sk, ks);
+	cout << sk << endl;
+	
+	
+	
+	return 0;
+}
+
+
+//////////////////////////
+
+
+Mini szyfrowanie. Napisz funkcję, która zwróci zaszyfrowany tekst. Zasada szyfrowania: przestawiamy znaki w tekście 1-2 3-4 5-6 itd.
+
+#include<iostream>
+#include<string>
+using namespace std;
+
+string SF(string k) {
+	int s = k.length();
+	
+	if (s % 2 == 1) s = s - 1;
+	for (int i = 0; i < s; i = i + 2) {
+		
+		char m1 = k[i];
+		char m2 = k[i + 1];
+		k[i] = m2;
+		k[i + 1] = m1;
+	}
+	return k;
+}
+
+
+
+int main() {
+
+	
+	string lk;
+	cout << "wpisz słowo: ";
+	getline(cin, lk);
+	lk = SF(lk);
+	cout << lk << endl;
+	
+	lk = SF(lk);
+	cout << lk << endl;
+	
+	
+	return 0;
+}
+
+
+
+
 
