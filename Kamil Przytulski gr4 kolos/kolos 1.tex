@@ -1,0 +1,81 @@
+\documentclass[12pt, letterpaper, titlepage]{article}
+\usepackage[left=3.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{amsmath} %pakiet matematyczny
+\usepackage{amssymb} %pakiet dodatkowych symboli
+\title{Kolokwium pierwsze }
+\author{Kamil Przytulski}
+\date {10.12.2022}
+\begin{document}
+\maketitle
+\newpage
+\section{Opóźniony generator Fibonacciego}
+Generator liczb pseudolosowych wykorzystywany w celu ulepszenia liniowego generatora kon-gruencyjnego. Jego początki datuje się na rok 1958, a do jego powstania przyczynili się GJMitchell i DP Moore.
+\subsection{DziałanieAlgorytm}
+Algorytm ten bazuje na podstawie następującego wzoru:
+$$ {{S_n}={S_n_-_j}{*S_n_-_k}{|M|},{0< j < k}} $$
+\newline
+Generator liczb pseudolosowych, którego wzór tworzenia liczb pseudolosowych możemy po-równać do formuły tworzącej sekwencje Fibonacciego z tą różnicą, że podczas tworzenia liczbpseudolosowych, można używać działań dodawania, odejmowania, mnożenia lub używaniaalternatywy rozłącznej, operatorXOR(działanie jest wstawiane w miejscu⋆).
+\\
+
+W zależności od użytego działania generator ten przyjmuje także odpowiednią nazwę. I tak:jeśli jest nim dodawanie, to generator określany jest jako Generator Fibonacciego z opóźnie-niem addytywnym lubALFG, w przypadku mnożenia jest nazywany jako Generator Fibonac-ciego z wielowarstwowym opóźnieniem określanym skrótemMLFG, a jeśli użytym działaniemjest operator XOR generator nazywany jest jako uogólnienie rejestru przesuwnego sprzężeniazwrotnego lubGFSR. Opóźniony generator Fibonacciego ma parametry wyższej jakości odpozostałych generatorów liniowych. Minusem tego algorytmu jest dużo większa liczba po-trzebnych do wykonania operacji, czego skutkiem jest długi czas działania algorytmu.
+\\
+
+Działanie generatora rozpoczyna się od wybrania wartości liczbjik(są one wybranymiindeksami z ziarna biorącymi udział podczas tworzenia liczb pseudolosowych). Następnieokreślana jest wartość liczbym. Ostatnim parametrem generatora jest wartośćval, którauznawana jest za ziarno. Przy takim zestawieniu nasze wartości będą losowane z zakresu od0 dom-1. Ważnym aspektem jest także stosowanie wartości m, która jest potęgą liczby 2. Ge-nerator jest opóźniony, gdyż musi pamiętać pewną ilość wartości wygenerowanych w krokachpoprzednich. Przykład powstawania liczb pseudolosowych przy zastosowaniu następującychwartości początkowychj= 7, k= 10, m= 256, val= 3567219402.
+
+
+\begin{table}[h]
+\centering\caption{Tabela z kilkoma utworzonymi liczbami pseudolosowymi}
+\begin{tabular}{c c c c c c c c c c c c}
+ 3 & 5 & 6 & 7 & 2 & 1 & 9 & 4 & 0 & 2 & → & 11 \\
+\hline
+ 5 & 6 & 7 & 2 & 1 & 9 & 4 & 0 & 2 & 11 & → & 15\\
+\hline
+ 6 & 7 & 2 & 1 & 9 & 4 & 0 & 2 & 11 & 15 & → & 15\\
+\hline
+7 & 2 & 1 & 9 & 4 &  0 & 2 & 11 &  15 & 15 & → & 17\\
+\hline
+2 & 1 & 9 & 4 & 0 &  2& 11 & 15 & 15 & 17& → & 28\\
+\hline
+1 &  9 & 4 & 0 & 2 & 11 & 15 & 15 & 17 & 28 & → & 43\\
+
+\newpage
+
+\section{SZARLOTKA Z POŁÓWKAMI JABŁEK}
+\begin{flushleft}Składniki\end{flushleft}
+\begin{itemize}
+  \item 3 szklanki mąki pszennej (480 g)
+  \item 250 g schłodzonego masła
+  \item 2 łyżeczki proszku do pieczenia
+  \item 4 łyżki cukru pudru + do posypania ciasta
+  \item 140 g serka homogenizowanego waniliowego
+  \item 1 jajko
+  \item  ok. 2 kg jabłek np. reneta
+  \item  1 op. cukru wanilinowego
+  \item  1 1/2 łyżeczki cynamonu
+\end{itemize}
+
+\begin{flushleft}Przygotowanie\end{flushleft}
+
+\begin{enumerate}
+  \item  Zagnieśćkruche ciastoz podanych składników: mąkę wsypać do miski lub na stolnicę,dodać pokrojone na kawałeczki zimne masło, proszek do pieczenia oraz cukier puder.
+   \item Rozdrabniać składniki na kruszonkę, następnie dodać serek homogenizowany oraz jajkoi połączyć składniki w jednolite ciasto.
+   \item Podzielić je na pół. Jedną połówkę włożyć do lodówki lub zamrażarki, drugą wyłożyćna dnie formy o wymiarach ok. 23×35 cm. Ciasto można podoklejać palcami.
+   \item Piekarnik nagrzać do180 stopni C.
+   \item Jabłka przekroić na połówki, obrać ze skórek i wyciąć gniazda nasienne ze środków.Ułożyć obok siebie w formie rozcięciem do dołu.
+   \item Jabłka posypać cukrem wanilinowym a następnie cynamonem.7. Drugą część ciasta rozwałkować i położyć na jabłkach.
+   \item Wstawić do piekarnika i piec przez ok.40 minutna złoty kolor.9. Po upieczeniu posypać cukrem pudrem. Można podawać z lodami.
+   \ldots
+\end{enumerate}
+
+
+\end{tabular}
+\end{table}
+
+
+\end{document}
+
+ 
