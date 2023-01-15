@@ -73,7 +73,7 @@ Error: syntax error, unexpected end of file
 
    5.
 
---> // koniec zadania 1, zaczynam zadanie 2
+--> //  zadanie 2
 
 --> (4^(-1/4)+(1/2^(-3/2))^(-4/3))*(4^(-1/4)+(2*sqrt(2))^(-4/3))
  ans  =
@@ -115,8 +115,8 @@ Error: syntax error, unexpected ), expecting end of file
 
    4.7465782
 
---> //koniec zadania 2, zaczynam zadanie 3
---> //komentarz do zad 3 - stopnie zamieniamy na radiany za pomoca wzoru n = (n*pi)/180
+-->zadanie 3
+--> //zad 3 - stopnie zamieniamy na radiany za pomoca wzoru n = (n*pi)/180
 
 --> (105 * /pi)/180
 (105 * /pi)/180
@@ -153,9 +153,9 @@ Error: syntax error, unexpected /
 
    4.1887902
 
---> //koniec zad 3, zaczynam zad 4
+--> //zad 4
 
---> //analogicznie jak w poprzednim zadaniu, korzystam ze wzoru n rad = (n*180)/pi
+--> // korzystam ze wzoru n rad = (n*180)/pi
 
 --> ((7/12)*180)/%pi
  ans  =
@@ -182,7 +182,7 @@ Error: syntax error, unexpected /
 
    98.676065
 
---> //koniec zad 4 zaczynam zad 5
+--> // zad 5
 
 --> asin(-sqrt(3)/2)
  ans  =
